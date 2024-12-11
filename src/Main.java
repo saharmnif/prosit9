@@ -40,8 +40,26 @@ public class Main {
         Departement dep3 = new Departement(1,"bi",32);
         Departement dep4 = new Departement(3,"Meca",2);
 
-    
+        AffectationHashMap affectationHashMap = new AffectationHashMap();
+        affectationHashMap.ajouterEmployeDepartement(e1,dep1);
+        affectationHashMap.ajouterEmployeDepartement(e2,dep2);
+        //affectationHashMap.ajouterEmployeDepartement(employe2,dep1);
+        affectationHashMap.ajouterEmployeDepartement(e3,dep4);
 
+        affectationHashMap.afficherEmployesEtDepartements();
+
+        System.out.println(affectationHashMap.rechercherEmploye(e1));
+        System.out.println(affectationHashMap.rechercherDepartement(dep1));
+
+        affectationHashMap.afficherEmployes();
+        affectationHashMap.afficherDepartements();
+
+        System.out.println(affectationHashMap.trierMap());
+
+        affectationHashMap.supprimerEmploye(e1);
+        affectationHashMap.supprimerEmployeEtDepartement(e2,dep2);
+        affectationHashMap.afficherEmployesEtDepartements();
+    }
 }
-}
+
 
