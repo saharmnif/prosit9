@@ -34,6 +34,14 @@ public class Main {
         societe.trierEmployeParId();
         societe.displayEmploye();
 
+        DepartementHashSet departementHashSet = new DepartementHashSet();
+        Departement dep1 = new Departement(1,"info",12);
+        Departement dep2 = new Departement(2,"RH",20);
+        Departement dep3 = new Departement(1,"bi",32);
+        Departement dep4 = new Departement(3,"Meca",2);
 
-    }
+    
+
 }
+}
+
